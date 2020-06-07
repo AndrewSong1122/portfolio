@@ -11,7 +11,7 @@ function App() {
     console.log(typeof me);  
     setUser(me);
     });
-  });
+  }, []);
 
   if(!user) {
     return(<div>loading</div>);
