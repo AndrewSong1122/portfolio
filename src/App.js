@@ -14,7 +14,7 @@ function App() {
   }, []);
 
   if(!user) {
-    return(<div>loading</div>);
+    return(<div>Loading...</div>);
   }
 
   return (
