@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Pages from './pages';
 import logo from './logo.svg';
 import './App.css';
 import $ from 'jquery';
@@ -8,7 +9,7 @@ function App() {
 
   useEffect(() => {
     $.get('https://gitconnected.com/v1/portfolio/andrewsong1122', (me) => {
-    console.log(typeof me);  
+    console.log(me);  
     setUser(me);
     });
   }, []);
@@ -17,24 +18,7 @@ function App() {
     return(<div>Loading...</div>);
   }
 
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <Pages user={user} />;
 }
 
 export default App;

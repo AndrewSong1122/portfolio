@@ -11,7 +11,7 @@ const items = [
   { name: 'Education', path: '/education' },
 ];
 
-const Sidebar = () => {
+const SideBar = () => {
   const location = useLocation();
 
   return (
@@ -34,4 +34,4 @@ const Sidebar = () => {
   );
 };
 
-export default Sidebar;
+export default SideBar;

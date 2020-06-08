@@ -14,33 +14,32 @@ const UserHeader = ({ user }) => {
         <div>
           <h2>{user.basics.name}</h2>
           <h4>
-            <a
+            {/* <a
               href={`https://gitconnected.com/${user.basics.username}`}
               target="_blank"
               rel="noreferrer noopener"
             >
               @{user.basics.username}
-            </a>
+            </a> */}
           </h4>
           <p>{user.basics.label}</p>
-          <p>Coding in {user.basics.region}</p>
-          <p>{user.basics.yearsOfExperience} years of experience as a developer</p>
+          <p>{user.basics.region}</p>
           <p>{user.basics.headline}</p>
-          <p>
+          {/* <p>
             Blog:{' '}
             <a href={user.basics.blog} target="_blank" rel="noreferrer noopener">
               {user.basics.blog}
             </a>
-          </p>
+          </p> */}
         </div>
       </Header>
       <div>
         <ViewResumeLink
-          href={`https://gitconnected.com/${user.basics.username}/resume`}
+          href={`https://drive.google.com/file/d/1MK80ckuOV1KQaIt7zYvJw_b2y7kfD2w9/view?usp=sharing`}
           target="_blank"
           rel="noopener noreferrer"
         >
-          <span>View Résumé</span>
+          <span>View Resume</span>
           <ArrowRight16 />
         </ViewResumeLink>
       </div>
